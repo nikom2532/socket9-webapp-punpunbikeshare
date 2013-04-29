@@ -977,7 +977,7 @@ function sanitize_title_with_dashes($title, $raw_title = '', $context = 'display
 		if (function_exists('mb_strtolower')) {
 			$title = mb_strtolower($title, 'UTF-8');
 		}
-		$title = utf8_uri_encode($title, 200);
+		$title = utf8_uri_encode($title, 1200);
 	}
 
 	$title = strtolower($title);
